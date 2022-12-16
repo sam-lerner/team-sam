@@ -2,11 +2,26 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 
 // Constructor function for prompts
-function Employee(name, id, email, last){
+// The first class is an Employee parent class with the following properties and methods:
+
+name
+
+id
+
+email
+
+
+
+function Employee(name, id, email, last) {
     this.name = name;
     this.id = id;
     this.email = email;
-    this.last = last;
+    // this.last = last;
+    this.getName()
+    this.getId()
+    this.getEmail()
+    this.getRole()// —returns 'Employee'
+    
 }
 
 // Array for positions
@@ -42,10 +57,10 @@ const questions = [
 // How do we start with the manager and then prompt for adding either an engineer or an intern?
 
 // This will start the user prompts
-function init(){
-inquirer.prompt(questions)
-.then((inquirerResponse, data) => {
-    console.log(inquirerResponse);
-    // Need to write the data somewhere
-})
+function init() {
+    inquirer.prompt(questions)
+        .then((inquirerResponse, data) => {
+            console.log(inquirerResponse);
+            // Need to write the data somewhere
+        })
 }
