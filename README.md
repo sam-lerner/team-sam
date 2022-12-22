@@ -44,7 +44,7 @@ Thank you to classmates Eric Kirberger and Azime Nail, tutor Dru Sanchez, and TA
 
 ## Tests
 
-To run the test suite, simply enter `npm test`. This will initiate the `jest` testing suite. Please see 
+To run the test suite, simply enter `npm test`. This will initiate the `jest` testing suite.
 
 ## License
 This project is licensed under the MIT license.
